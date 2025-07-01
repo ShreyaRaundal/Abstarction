@@ -9,3 +9,12 @@ abstracted program?
 
 Abstract Class?
 🔸 Code Scenario:You want every employee to log() their login, but each one has different salary rules.
+
+ Fix with Abstraction:
+❌ Bad (tightly coupled):
+Circle c = new Circle();
+System.out.println(c.area());
+
+✅ Good (abstracted):
+Shape s = new Circle(); // can change to Rectangle easily
+System.out.println(s.area());
